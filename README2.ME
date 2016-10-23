@@ -49,3 +49,34 @@ Readme2
 3、提交操作（注释）：
     git commit -m '提交描述'
     
+
+六本地仓库同步到远程仓库
+1、初始化git
+
+2、创建文件：
+    touch  文件
+    
+3、添加到暂存区：
+    git add 文件
+    
+4、添加到本地仓库：
+    git commit -m '注释'
+    
+5、添加到远程仓库；
+    git push 
+    
+********思考*******
+问题：无法同步
+答： 私有项目，没有权限，输入用户名密码，或者远程地址采用这种类型。
+解决方法：
+
+vi  .git/config
+将
+[remote "origin"]
+	url = https://github.com用户名/仓库名.git
+修改为：
+url = https://用户名：密码@github.com用户名/仓库名.git
+    
+    
+
+    
