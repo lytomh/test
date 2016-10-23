@@ -1,0 +1,51 @@
+Readme2
+
+一、基本信息设置
+1、设置用户名：                
+    git config --global user.name ‘用户名’
+    
+2、设置用户邮箱：   
+    git config --global user.email ‘邮箱’
+    
+
+二、初始化一个git仓库
+1、创建文件夹：
+    直接右键新建或  用git命令 mkdir创建     e.g -> test 文件夹
+   
+2、在文件内（e.g -> test）初始化git（创建git仓库）：
+    cd 文件夹（e.g -> test）
+    git init
+    或在文件夹(e.g -> test )中  ：git init
+    
+
+三、向仓库中添加文件流程
+1、创建文件;
+    touch 文件名（e.g -> a1.txt）             删除   rm  文件名 
+
+     *(可随意顺序使用)git status      （git status命令可以列出当前目录所有还没有被git管理的文件和被git管理且被修改但还未提交(git commit)的文件。）
+     
+2、添加文件到暂存区;
+    git add 文件名（e.g -> a1.txt）  （将文件（e.g->a1.txt）添加到暂存区）
+
+3、将文件从暂存区提交到仓库：
+    git commit -m 'add 文件名（e.g->a1.txt)'单引号后面是注释
+    
+    
+四、修改仓库文件
+1、修改文件：
+    通过vi/vim 命令 修改数据          查看： cat 文件名                                                                    
+    
+2、添加文件到暂存区：
+    git add 文件名
+    
+3、将文件从暂存区提交到仓库：
+    git commit -m 'add 文件名'
+
+五、删除仓库文件
+1、删除文件：
+    rm -rf 文件名
+2、从git中删除文件：
+    git rm 文件名
+3、提交操作（注释）：
+    git commit -m '提交描述'
+    
